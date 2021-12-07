@@ -61,17 +61,15 @@ public class Riblet extends Frame {
   
   public void paint(Graphics g) {
     double xCentro;
-    double yBase = this.height + CoordinateSystem.Y_OFFSET;
-
-    Graphics2D g2d = this.setup(g, yBase);
+    Graphics2D g2d = this.setup(g, this.height);
     
     while(this.GENERAL_PATH.getCurrentPoint().getX() + this.baseHalf <= this.sampleLength) {
       xCentro = this.GENERAL_PATH.getCurrentPoint().getX();
 
-      this.GENERAL_PATH.moveTo(xCentro - this.baseHalf, yBase);
+      this.GENERAL_PATH.moveTo(xCentro - this.baseHalf, this.height);
       this.GENERAL_PATH.lineTo(xCentro, CoordinateSystem.Y_OFFSET);
-      this.GENERAL_PATH.lineTo(xCentro + this.baseHalf, yBase);
-      this.GENERAL_PATH.moveTo(xCentro + this.distanceBetween, yBase);
+      this.GENERAL_PATH.lineTo(xCentro + this.baseHalf, this.height);
+      this.GENERAL_PATH.moveTo(xCentro + this.distanceBetween, this.height);
     }
     
     g2d.draw(this.GENERAL_PATH);
