@@ -23,7 +23,7 @@ public abstract class CoordinateSystem {
     // Marks and labels for the x-axis.
     for (int i = X_OFFSET + step; i <= max.x; i = i + step) {
       g2d.drawLine(i, Y_OFFSET - 2, i, Y_OFFSET + 2);
-      g2d.drawString(String.valueOf(i), i - 7, Y_OFFSET - 7);
+      g2d.drawString(String.valueOf(i-step), i - 7, Y_OFFSET - 7);
     }
 
     // y-axis.
@@ -33,7 +33,7 @@ public abstract class CoordinateSystem {
     for (int i = Y_OFFSET + step; i <= max.y; i = i + step) {
       g2d.drawLine(X_OFFSET - 2, i, X_OFFSET + 2, i);
       if (i > 99) s = "";
-      g2d.drawString(s + String.valueOf(i), X_OFFSET - 25, i + 5);
+      g2d.drawString(s + String.valueOf(i-step), X_OFFSET - 25, i + 5);
     }
 
     // Reset to the original font.
