@@ -1,8 +1,10 @@
-import myutils.*;
+package src;
 import java.awt.*;
 import java.awt.event.WindowEvent;
 import java.awt.event.WindowAdapter;
 import java.awt.geom.*;
+
+import src.myutils.*;
 
 public class Riblet extends Frame {
 

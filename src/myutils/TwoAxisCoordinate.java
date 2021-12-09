@@ -1,4 +1,4 @@
-package myutils;
+package src.myutils;
 
 public class TwoAxisCoordinate {
   public int x;
