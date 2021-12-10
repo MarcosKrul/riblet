@@ -33,7 +33,7 @@ public class Riblet extends Frame {
     this.distanceBetween = distanceBetween;
     this.distanceFirst = distanceFirst;
 
-    this.baseHalf = (Math.tan(Math.toRadians(angle/2)) * height) / 2;
+    this.baseHalf = (Math.tan(Math.toRadians(angle/2)) * height);
     
     this.frameSize = new TwoAxisCoordinate(this.sampleLength + 2*this.STEP, (int)height + 100);
     

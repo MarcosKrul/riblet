@@ -14,7 +14,7 @@ Marcos Renan Krul
 
 ![Exemplo 01](https://github.com/MarcosKrul/riblet/blob/master/tmp/images/example01.png)
 
-* Estrutura para: 1000, 300, 60, 250, 200
+* Estrutura para: 1000, 130, 90, 300, 200
 
 ![Exemplo 01](https://github.com/MarcosKrul/riblet/blob/master/tmp/images/example02.png)
 
